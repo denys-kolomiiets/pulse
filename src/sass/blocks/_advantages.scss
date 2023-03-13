@@ -18,6 +18,9 @@
         color: #0d0d0d;
         font-size: 18px;
         font-weight: 700;
+        &_heart {
+            margin-top: 34px;
+        }
     }
     &__descr {
         margin-top: 26px;
@@ -26,9 +29,12 @@
         font-weight: 500;
         text-align: center;
         a {
-            text-decoration: none;
+            text-decoration: underline;
             color: $main-color;
             text-transform: uppercase;
+        }
+        &_heart {
+            margin-top: 28px;
         }
     }
 }
