@@ -109,7 +109,7 @@ $(document).ready(function(){
                 }
             }
         });
-    };
+    }
 
     validateForms('#consultation-form');
     validateForms('#consultation form');
