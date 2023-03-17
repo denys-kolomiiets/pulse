@@ -139,6 +139,22 @@ $(document).ready(function(){
 		return false;
 	});
     
-  });
+    //smooth scroll and pageup
+
+    $(window).scroll(function(){
+        if($(this).scrollTop()>1600) {  //если страница проскролена до значения 1600пикселей, то появляется кнопка
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    //скрипт именно для плавного скроллинга:
+    $("a[href^='#']").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
+});
 
  
