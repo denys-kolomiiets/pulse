@@ -150,8 +150,8 @@ $(document).ready(function(){
     });
 
     //скрипт именно для плавного скроллинга:
-    $("a[href^='#']").click(function(){
-        const _href = $(this).attr("href");
+    $("a[href=#up]").click(function(){  //#up - конкретный идентификаторб если для всех ссылок с "#", то надо [href^='#']
+        var _href = $(this).attr("href"); //в будущем поменять на лет или конст!
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
     });

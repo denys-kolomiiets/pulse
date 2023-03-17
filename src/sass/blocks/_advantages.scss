@@ -37,4 +37,15 @@
             margin-top: 28px;
         }
     }
+    &__img {
+        &_animated {
+            animation-name: heartbeat;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
 }
